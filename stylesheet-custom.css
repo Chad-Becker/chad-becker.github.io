@@ -1,0 +1,12 @@
+.pad-top {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.bg-top {
+	background-color: lightblue;
+}
+
+body {
+	font-family: "Raleway", sans-serif;
+}

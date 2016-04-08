@@ -18,37 +18,52 @@
 	<!-- Latest compiled JavaScript -->
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
+	<!-- Change font (and in CSS code) -->
+	<link href="http://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
 	<link rel="stylesheet" type="text/css" href="stylesheet-custom.css">
 
 </head>
 
 <body>
-	<nav>
+	<!-- Add to the navbar the active tab of the section you are on -->
+	<!-- Need to fix the navbar covering up the section titles when the nav links are clicked (padding?) -->
+	<!-- Need to style navbar further -->
+	<nav class="navbar navbar-default navbar-fixed-top">
 		<div class="container-fluid">
-			<div class="row text-center">
-				<a class="col-sm-2" href=#top>Chad Becker</a>
-				<div class="col-sm-3"></div>
-				<a class="col-sm-1" href=#summary>Summary</a>
-				<a class="col-sm-1" href=#education>Education</a>
-				<a class="col-sm-1" href=#workExperience>Work XP</a>
-				<a class="col-sm-1" href=#projects>Projects</a>
-				<a class="col-sm-1" href=#skills>Skills</a>
-				<a class="col-sm-1" href=#visitorsLog>Visitors Log</a>
-				<a class="col-sm-1" href=#contact>Contact</a>
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Chad Becker</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href=#summary>Summary</a></li>
+					<li><a href=#education>Education</a></li>
+					<li><a href=#workExperience>Work XP</a></li>
+					<li><a href=#projects>Projects</a></li>
+					<li><a href=#skills>Skills</a></li>
+					<li><a href=#visitorsLog>Visitors Log</a></li>
+					<li><a href=#contact>Contact</a></li>
+				</ul>
 			</div>
 		</div>
 	</nav>
 
 	<section id="top">
-		<!-- no container here to make jumbotron stretch entire screen -->
-		<div class="container-fluid bg-top text-center">
+		<div class="container-fluid pad-top bg-top text-center">
 			<h1>Chad William Becker</h1>
 			<a href="https://rootfire.net/golden/" target="_blank">
-				<img class="img-responsive" src="https://rootfire.net/app/uploads/2016/03/TheMovement-Golden-Album-Art-300x300.jpg" alt="The Movement's newest album" style="width:300px;height:300px;border:0" title="The Movement's newest album">
+				<img class="img-responsive" style="display:inline" src="https://rootfire.net/app/uploads/2016/03/TheMovement-Golden-Album-Art-300x300.jpg" alt="The Movement's newest album" style="width:300px;height:300px;border:0" title="The Movement's newest album">
 			</a>
 			<h2>Project Engineer | Software Engineer</h2>
 			<h2>Lockheed Martin Aeronautics Company</h2><br>
-			<h3>Takeaway quote</h3>
+			<h3>Takeaway quote</h3><br>
+			<!-- Need to change button look and add smooth scroll -->
+			<a href="#summary" class="btn btn-default" role="button">Summary</a>
 		</div>
 	</section>
 
@@ -107,30 +122,34 @@
 	<section id="skills">
 		<!-- possibly use .thumbnail to explain images when clicked on -->
 		<h2>Skills, Hobbies, and Interests</h2>
-		<a href="https://rootfire.net/golden/" target="_blank">
-			<img src="https://rootfire.net/app/uploads/2016/03/TheMovement-Golden-Album-Art-300x300.jpg" alt="The Movement's newest album" style="width:20px;height:20px;border:0" title="The Movement's newest album">
-		</a>
-		<a href="https://rootfire.net/golden/" target="_blank">
-			<img src="https://rootfire.net/app/uploads/2016/03/TheMovement-Golden-Album-Art-300x300.jpg" alt="The Movement's newest album" style="width:20px;height:20px;border:0" title="The Movement's newest album">
-		</a>
-		<a href="https://rootfire.net/golden/" target="_blank">
-			<img src="https://rootfire.net/app/uploads/2016/03/TheMovement-Golden-Album-Art-300x300.jpg" alt="The Movement's newest album" style="width:20px;height:20px;border:0" title="The Movement's newest album">
-		</a>
-		<a href="https://rootfire.net/golden/" target="_blank">
-			<img src="https://rootfire.net/app/uploads/2016/03/TheMovement-Golden-Album-Art-300x300.jpg" alt="The Movement's newest album" style="width:20px;height:20px;border:0" title="The Movement's newest album">
-		</a>
-		<a href="https://rootfire.net/golden/" target="_blank">
-			<img src="https://rootfire.net/app/uploads/2016/03/TheMovement-Golden-Album-Art-300x300.jpg" alt="The Movement's newest album" style="width:20px;height:20px;border:0" title="The Movement's newest album">
-		</a>
-		<a href="https://rootfire.net/golden/" target="_blank">
-			<img src="https://rootfire.net/app/uploads/2016/03/TheMovement-Golden-Album-Art-300x300.jpg" alt="The Movement's newest album" style="width:20px;height:20px;border:0" title="The Movement's newest album">
-		</a>
-		<a href="https://rootfire.net/golden/" target="_blank">
-			<img src="https://rootfire.net/app/uploads/2016/03/TheMovement-Golden-Album-Art-300x300.jpg" alt="The Movement's newest album" style="width:20px;height:20px;border:0" title="The Movement's newest album">
-		</a>
-		<a href="https://rootfire.net/golden/" target="_blank">
-			<img src="https://rootfire.net/app/uploads/2016/03/TheMovement-Golden-Album-Art-300x300.jpg" alt="The Movement's newest album" style="width:20px;height:20px;border:0" title="The Movement's newest album">
-		</a>
+		<div class="container-fluid">
+			<div class="row">
+				<a class="col-sm-3" href="https://rootfire.net/golden/" target="_blank">
+					<img class="img-responsive" style="display:inline" src="https://rootfire.net/app/uploads/2016/03/TheMovement-Golden-Album-Art-300x300.jpg" alt="The Movement's newest album" style="width:20px;height:20px;border:0" title="The Movement's newest album">
+				</a>
+				<a class="col-sm-3" href="https://rootfire.net/golden/" target="_blank">
+					<img class="img-responsive" style="display:inline" src="https://rootfire.net/app/uploads/2016/03/TheMovement-Golden-Album-Art-300x300.jpg" alt="The Movement's newest album" style="width:20px;height:20px;border:0" title="The Movement's newest album">
+				</a>
+				<a class="col-sm-3" href="https://rootfire.net/golden/" target="_blank">
+					<img class="img-responsive" style="display:inline" src="https://rootfire.net/app/uploads/2016/03/TheMovement-Golden-Album-Art-300x300.jpg" alt="The Movement's newest album" style="width:20px;height:20px;border:0" title="The Movement's newest album">
+				</a>
+				<a class="col-sm-3" href="https://rootfire.net/golden/" target="_blank">
+					<img class="img-responsive" style="display:inline" src="https://rootfire.net/app/uploads/2016/03/TheMovement-Golden-Album-Art-300x300.jpg" alt="The Movement's newest album" style="width:20px;height:20px;border:0" title="The Movement's newest album">
+				</a><br>
+				<a class="col-sm-3" href="https://rootfire.net/golden/" target="_blank">
+					<img class="img-responsive" style="display:inline" src="https://rootfire.net/app/uploads/2016/03/TheMovement-Golden-Album-Art-300x300.jpg" alt="The Movement's newest album" style="width:20px;height:20px;border:0" title="The Movement's newest album">
+				</a>
+				<a class="col-sm-3" href="https://rootfire.net/golden/" target="_blank">
+					<img class="img-responsive" style="display:inline" src="https://rootfire.net/app/uploads/2016/03/TheMovement-Golden-Album-Art-300x300.jpg" alt="The Movement's newest album" style="width:20px;height:20px;border:0" title="The Movement's newest album">
+				</a>
+				<a class="col-sm-3" href="https://rootfire.net/golden/" target="_blank">
+					<img class="img-responsive" style="display:inline" src="https://rootfire.net/app/uploads/2016/03/TheMovement-Golden-Album-Art-300x300.jpg" alt="The Movement's newest album" style="width:20px;height:20px;border:0" title="The Movement's newest album">
+				</a>
+				<a class="col-sm-3" href="https://rootfire.net/golden/" target="_blank">
+					<img class="img-responsive" style="display:inline" src="https://rootfire.net/app/uploads/2016/03/TheMovement-Golden-Album-Art-300x300.jpg" alt="The Movement's newest album" style="width:20px;height:20px;border:0" title="The Movement's newest album">
+				</a>
+			</div>
+		</div>
 	</section>
 
 	<section id="visitorsLog">
@@ -140,19 +159,21 @@
 
 	<footer id="contact">
 		<div class="container-fluid">
-
-			<a href="#" target"_blank">
-				<span class="glyphicon glyphicon-envelope" title="Email"></span>
-			</a>
-			<a href="https://rootfire.net/golden/" target"_blank">
-				<span class="glyphicon glyphicon-file" title="Resume"></span>
-			</a>
-			<a href="https://rootfire.net/golden/" target"_blank">
-				<img src="https://rootfire.net/app/uploads/2016/03/TheMovement-Golden-Album-Art-300x300.jpg" alt="GitHub" style="width:20px;height:20px;border:0" title="The Movement's newest album">
-			</a>
-			<a href="https://rootfire.net/golden/" target"_blank">
-				<img src="https://rootfire.net/app/uploads/2016/03/TheMovement-Golden-Album-Art-300x300.jpg" alt="Email" style="width:20px;height:20px;border:0" title="The Movement's newest album">
-			</a>
-		</footer>
-	</body>
-	</html>
+			<div class="row">
+				<a class="col-sm-3" href="#" target"_blank">
+					<span class="glyphicon glyphicon-envelope" title="Email"></span>
+				</a>
+				<a class="col-sm-3" href="https://rootfire.net/golden/" target"_blank">
+					<span class="glyphicon glyphicon-file" title="Resume"></span>
+				</a>
+				<a class="col-sm-3" href="https://rootfire.net/golden/" target"_blank">
+					<img src="https://rootfire.net/app/uploads/2016/03/TheMovement-Golden-Album-Art-300x300.jpg" alt="GitHub" style="width:20px;height:20px;border:0" title="The Movement's newest album">
+				</a>
+				<a class="col-sm-3" href="https://rootfire.net/golden/" target"_blank">
+					<img src="https://rootfire.net/app/uploads/2016/03/TheMovement-Golden-Album-Art-300x300.jpg" alt="Email" style="width:20px;height:20px;border:0" title="The Movement's newest album">
+				</a>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
