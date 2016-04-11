@@ -3,7 +3,7 @@ $(document).ready(function(){
 // ---------------------Smooth Scrolling----------------------------------
 
   // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, #top a[href='#summary'], footer a[href='#top']").on('click', function(event) {
+  $(".navbar a, #top a[href='#aboutMe'], footer a[href='#top']").on('click', function(event) {
 
   // Prevent default anchor click behavior
   event.preventDefault();
