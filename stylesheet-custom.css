@@ -8,12 +8,7 @@
 }
 
 .bg-top {
-	background-color: lightblue;
-    background: url("Images/ThailandS.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background: lightblue url("Images/ThailandS.jpg") center cover no-repeat fixed;
 }
 
 .txt-top {
