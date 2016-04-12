@@ -8,10 +8,10 @@
 }
 
 .bg-top {
-	background-image: url("Images/Thailand.jpg");
+	background-color: lightblue;
+    background-image: url("Images/Thailand.jpg");
     background-position: center;
     background-size: cover;
-    background-color: lightblue;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
