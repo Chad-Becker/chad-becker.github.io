@@ -1,68 +1,191 @@
 .navbar {
-    opacity: 0.9;
+	opacity: 0.9;
 }
 
-.pad-top {
+.container {
+	max-width: 100%;
+	width: 80%;
+	padding-top: 90px;
+	padding-bottom: 90px;
+}
+
+p {
+	margin: 20px;
+	font-family: "Lato", sans-serif;
+	font-size: 16px;
+}
+
+.navbar-default .navbar-nav li a, .navbar-default .navbar-brand {
+	color: #57575c;
+}
+
+.navbar-default .navbar-nav li a:hover,
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+	background-color: #b0b0b5;
+	color: #ffffff;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+	background-color: #57575c;
+	color: #ffffff;
+}
+
+.navbar-default .navbar-nav .dropdown .dropdown-menu .active a,
+.navbar-default .navbar-nav .dropdown .dropdown-menu .active a:hover,
+.navbar-default .navbar-nav .dropdown .dropdown-menu .active a:focus {
+	background-color: #57575c;
+	color: #ffffff;
+}
+
+.fmt-title {
 	padding-top: 205px;
 	padding-bottom: 205px;
+
+	background: url("Images/Thailand.jpg") no-repeat fixed center;
+	background-size: cover;
+	display: block;
+	max-width: 100%;
+	height: auto;
+
+	color: #ffffff;
 }
 
-.bg-top {
-    background: lightblue url("Images/Thailand.jpg") no-repeat fixed center;
-    background-size: cover;
+.fmt-title h1 {
+	margin-bottom: 70px;
+	font-size: 80px;
+	text-shadow: 0px 3px 5px #222222;
 }
 
-.txt-top {
-    color: #ffffff
+.fmt-title h2 {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 30px;
+	text-shadow: 0px 3px 5px #222222;
 }
 
-.txt-top a {
-    color: #ffffff;
-    font-size: 40px;
+.fmt-title h3 {
+	margin-top: 70px;
+	text-shadow: 0px 3px 5px #222222;
 }
 
-.pad-aboutMe {
-	padding-top: 50px;
-	padding-bottom: 50px;
+.fmt-title span {
+	color: #ffffff;
+	margin-top: 140px;
+	text-shadow: 0px 3px 5px #222222;
 }
 
-.pad-education {
-	padding-top: 50px;
-	padding-bottom: 50px;
+.fmt-aboutMe {
+	padding-top: 90px;
+	padding-bottom: 90px;
 }
 
-.pad-workExperience {
-	padding-top: 50px;
-	padding-bottom: 50px;
+.fmt-aboutMe h3 {
+	margin-bottom: 50px;
+	font-size: 50px;
 }
 
-#workExperience h3, #projects h3 {
-    margin-top: 90px;
+.fmt-aboutMe img {
+	margin-top: 50px;
 }
 
-.pad-projects {
-	padding-top: 50px;
-	padding-bottom: 50px;
+.fmt-section-title {
+	display: block;
+	max-width: 100%;
+	height:auto;
+
+	padding-top: 200px;
+	padding-bottom: 200px;
 }
 
-.pad-skills {
-	padding-top: 50px;
-	padding-bottom: 50px;
+.fmt-section-title h2 {
+	font-size: 70px;
+	text-shadow: 0px 3px 5px #222222;
 }
 
-.pad-visitorsLog {
-	padding-top: 50px;
-	padding-bottom: 50px;
+.bg-education-title {
+	background: url("Images/UVA Rotunda.jpg") no-repeat fixed center;
+	background-size: cover;
 }
 
-.pad-contact {
-	padding-top: 50px;
-	padding-bottom: 50px;
+.pad-education-content {
+	padding-top: 90px;
+	padding-bottom: 90px;
 }
 
-.imageHover:hover {
-	box-shadow: 0px 0px 20px 5px rgba(0,0,0, .2);
-	transition: box-shadow 0.25s;
+.bg-workExperience-title {
+	background: url("Images/F-22.jpg") no-repeat fixed bottom;
+	background-size: cover;
+}
+
+#workExperience h3, #skills h3 {
+	padding-bottom: 30px;
+}
+
+.bg-projects-title {
+	background: url("Images/Technical Thesis.jpg") no-repeat fixed top;
+	background-size: cover;
+}
+
+.bg-skills-title {
+	background: url("Images/Homerun1.jpg") no-repeat fixed bottom;
+	background-size: cover;
+}
+
+#skills img {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.bg-visitorsLog-title {
+	background: url("Images/Thailand2.jpg") no-repeat fixed center;
+	background-size: cover;
+}
+
+.fmt-contact {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	color: #ffffff;
+}
+
+.color-contact {
+	color: #ffffff;
+}
+
+.shadow1 {
+	box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.opacity1 {
+	opacity: 1.0;
+}
+
+.opacity1:hover {
+	opacity: 0.7;
+}
+
+.shadow2 {
+	box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.opacity2 {
+	opacity: 0.75;
+}
+
+.opacity2:hover {
+	opacity: 1.0;
+}
+
+.margin-icons a {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+#title span:hover, #contact span:hover, #contact a:hover {
+	color: #6495ed;
 }
 
 body {
@@ -70,39 +193,52 @@ body {
 }
 
 h2 {
-    text-align: center;
+	text-align: center;
+	color: #ffffff;
+}
+
+h3 {
+	font-size: 30px;
+}
+
+h4 {
+	font-size: 20px;
+}
+
+footer {
+	background: #2d2d30;
 }
 
 .slideanim {visibility:hidden;}
 .slide {
-    /* The name of the animation */
-    animation-name: slide;
-    -webkit-animation-name: slide; 
-    /* The duration of the animation */
-    animation-duration: 1s; 
-    -webkit-animation-duration: 1s;
-    /* Make the element visible */
-    visibility: visible; 
+	/* The name of the animation */
+	animation-name: slide;
+	-webkit-animation-name: slide;
+	/* The duration of the animation */
+	animation-duration: 1s; 
+	-webkit-animation-duration: 1s;
+	/* Make the element visible */
+	visibility: visible; 
 }
 
 /* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
 @keyframes slide {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateY(70%);
-    } 
-    100% {
-        opacity: 1;
-        -webkit-transform: translateY(0%);
-    } 
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(70%);
+	} 
+	100% {
+		opacity: 1;
+		-webkit-transform: translateY(0%);
+	} 
 }
 @-webkit-keyframes slide {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateY(70%);
-    } 
-    100% {
-        opacity: 1;
-        -webkit-transform: translateY(0%);
-    }
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(70%);
+	} 
+	100% {
+		opacity: 1;
+		-webkit-transform: translateY(0%);
+	}
 }
