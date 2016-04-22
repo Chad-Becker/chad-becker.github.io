@@ -45,11 +45,13 @@ p {
 	padding-top: 205px;
 	padding-bottom: 205px;
 
+		width: 100%;
+	height: auto;
+
 	background: url("Images/Thailand.jpg") no-repeat fixed center;
 	background-size: cover;
-	display: block;
-	max-width: 100%;
-	height: auto;
+	/*display: block;*/
+
 
 	color: #ffffff;
 }
@@ -93,7 +95,7 @@ p {
 }
 
 .fmt-section-title {
-	display: block;
+	/*display: block;*/
 	max-width: 100%;
 	height:auto;
 
@@ -107,7 +109,7 @@ p {
 }
 
 .bg-education-title {
-	background: url("Images/UVA Rotunda.jpg") no-repeat fixed center;
+	background: url("Images/UVA Rotunda.jpg") no-repeat scroll center;
 	background-size: cover;
 }
 
@@ -118,7 +120,7 @@ p {
 
 .bg-workExperience-title {
 	background: url("Images/F-22.jpg") no-repeat fixed bottom;
-	background-size: cover;
+	background-size: contain;
 }
 
 #workExperience h3, #skills h3 {
