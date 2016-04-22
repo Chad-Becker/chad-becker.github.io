@@ -45,14 +45,13 @@ p {
 	padding-top: 205px;
 	padding-bottom: 205px;
 
-		width: 100%;
+	display: block;
+	max-width: 100%;
 	height: auto;
 
 	background: url("Images/Thailand.jpg") no-repeat fixed center;
 	background-size: cover;
-	/*display: block;*/
-
-
+	
 	color: #ffffff;
 }
 
@@ -95,12 +94,12 @@ p {
 }
 
 .fmt-section-title {
-	/*display: block;*/
-	max-width: 100%;
-	height:auto;
-
 	padding-top: 200px;
 	padding-bottom: 200px;
+
+	display: block;
+	max-width: 100%;
+	height:auto;
 }
 
 .fmt-section-title h2 {
@@ -109,7 +108,7 @@ p {
 }
 
 .bg-education-title {
-	background: url("Images/UVA Rotunda.jpg") no-repeat scroll center;
+	background: url("Images/UVA Rotunda.jpg") no-repeat fixed center;
 	background-size: cover;
 }
 
@@ -120,7 +119,7 @@ p {
 
 .bg-workExperience-title {
 	background: url("Images/F-22.jpg") no-repeat fixed bottom;
-	background-size: contain;
+	background-size: cover;
 }
 
 #workExperience h3, #skills h3 {
@@ -221,6 +220,33 @@ footer {
 	-webkit-animation-duration: 1s;
 	/* Make the element visible */
 	visibility: visible; 
+}
+
+@media only screen and (max-width: 400px) {
+	.bg-education-title {
+		background: url("Images/UVA Rotunda.jpg") no-repeat scroll bottom;
+		background-size: cover;
+	}
+
+	.bg-workExperience-title {
+		background: url("Images/F-22.jpg") no-repeat scroll bottom;
+		background-size: cover;
+	}
+
+	.bg-projects-title {
+		background: url("Images/Technical Thesis.jpg") no-repeat scroll top;
+		background-size: cover;
+	}
+
+	.bg-skills-title {
+		background: url("Images/Homerun1.jpg") no-repeat scroll bottom;
+		background-size: cover;
+	}
+
+	.bg-visitorsLog-title {
+		background: url("Images/Thailand2.jpg") no-repeat scroll center;
+		background-size: cover;
+	}
 }
 
 /* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
