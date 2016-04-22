@@ -222,7 +222,7 @@ footer {
 	visibility: visible; 
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 1024px) {
 	.fmt-title {
 		padding-top: 205px;
 		padding-bottom: 205px;
@@ -231,7 +231,7 @@ footer {
 		max-width: 100%;
 		height: auto;
 
-		background: url("Images/Thailand.jpg") no-repeat scroll center;
+		background: url("Images/Thailand.jpg") no-repeat scroll right center;
 		background-size: cover;
 		
 		color: #ffffff;
