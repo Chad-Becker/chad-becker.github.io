@@ -185,7 +185,7 @@ p {
 	margin-right: 20px;
 }
 
-#title span:hover, #contact span:hover, #contact a:hover {
+#title span:hover, #contact span:hover {
 	color: #6495ed;
 }
 
@@ -222,7 +222,21 @@ footer {
 	visibility: visible; 
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 650px) {
+	.fmt-title {
+		padding-top: 205px;
+		padding-bottom: 205px;
+
+		display: block;
+		max-width: 100%;
+		height: auto;
+
+		background: url("Images/Thailand.jpg") no-repeat scroll center;
+		background-size: cover;
+		
+		color: #ffffff;
+	}
+
 	.bg-education-title {
 		background: url("Images/UVA Rotunda.jpg") no-repeat scroll bottom;
 		background-size: cover;
@@ -239,12 +253,12 @@ footer {
 	}
 
 	.bg-skills-title {
-		background: url("Images/Homerun1.jpg") no-repeat scroll bottom;
+		background: url("Images/Homerun1.jpg") no-repeat scroll left bottom;
 		background-size: cover;
 	}
 
 	.bg-visitorsLog-title {
-		background: url("Images/Thailand2.jpg") no-repeat scroll center;
+		background: url("Images/Thailand2.jpg") no-repeat scroll left center;
 		background-size: cover;
 	}
 }

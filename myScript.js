@@ -1,34 +1,34 @@
 $(document).ready(function(){
 
-// ---------------------Smooth Scrolling----------------------------------
+// // ---------------------Smooth Scrolling----------------------------------
 
-  // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, a[href='#aboutMe']").on('click', function(event) {
+//   // Add smooth scrolling to all links in navbar + footer link
+//   $(".navbar a, a[href='#aboutMe']").on('click', function(event) {
 
-  // Prevent default anchor click behavior
-  event.preventDefault();
+//   // Prevent default anchor click behavior
+//   event.preventDefault();
 
-  // Store hash
-  var hash = this.hash;
+//   // Store hash
+//   var hash = this.hash;
 
-  // Using jQuery's animate() method to add smooth page scroll
-  // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-  $('html, body').animate({
-  	scrollTop: $(hash).offset().top
-  }, 2000, function(){
+//   // Using jQuery's animate() method to add smooth page scroll
+//   // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+//   $('html, body').animate({
+//   	scrollTop: $(hash).offset().top
+//   }, 2000, function(){
 
-    // Add hash (#) to URL when done scrolling (default click behavior)
-    window.location.hash = hash;
-});
-});
+//     // Add hash (#) to URL when done scrolling (default click behavior)
+//     window.location.hash = hash;
+// });
+// });
 
 // ---------------------Popovers------------------------------------------
 
-  $('[data-toggle="popover"]').popover();
+$('[data-toggle="popover"]').popover();
 
 // ---------------------Slide-In Animation--------------------------------
 
-  $(window).scroll(function() {
+$(window).scroll(function() {
   $(".slideanim").each(function(){
     var pos = $(this).offset().top;
 
@@ -38,5 +38,5 @@ $(document).ready(function(){
     }
   });
 });
-  
+
 });
