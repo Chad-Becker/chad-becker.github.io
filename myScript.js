@@ -3,7 +3,7 @@ $(document).ready(function(){
 // ---------------------Smooth Scrolling----------------------------------
 
   // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a.scroll, a[href='#aboutMe']").on('click', function(event) {
+  $("a.scroll").on('click', function(event) {
 
   // Prevent default anchor click behavior
   event.preventDefault();
@@ -19,7 +19,7 @@ $(document).ready(function(){
 
     // Add hash (#) to URL when done scrolling (default click behavior)
     window.location.hash = hash;
-});
+  });
 });
 
 // ---------------------Popovers------------------------------------------
