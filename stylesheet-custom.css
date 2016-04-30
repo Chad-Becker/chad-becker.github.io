@@ -356,7 +356,7 @@ footer {
 	}
 
 	.bg-projects-title {
-		background: url("Images/Technical Thesis.jpg") no-repeat scroll 35% top;
+		background: url("Images/Technical Thesis.jpg") no-repeat scroll left top;
 		background-size: cover;
 	}
 
