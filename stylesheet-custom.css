@@ -103,7 +103,7 @@ main section background and text color*/
 
 .fmt-title {
 	padding-top: 205px;
-	padding-bottom: 205px;
+	padding-bottom: 140px;
 
 	display: block;
 	max-width: 100%;
@@ -141,7 +141,12 @@ main section background and text color*/
 
 .fmt-aboutMe h3 {
 	margin-bottom: 50px;
+	text-align: center;
 	font-size: 50px;
+}
+
+.fmt-aboutMe h3 {
+	text-align: center;
 }
 
 .fmt-aboutMe img {
@@ -177,7 +182,7 @@ main section background and text color*/
 }
 
 .bg-work-title {
-	background: url("Images/F-22.jpg") no-repeat fixed bottom;
+	background: url("Images/F-22.jpg") no-repeat fixed center bottom;
 	background-size: cover;
 }
 
@@ -204,23 +209,23 @@ main section background and text color*/
 }
 
 #components1 {
-	width: 70%;
-	height: 70%;
-}
-
-#components2 {
-	width: 90%;
-	height: 90%;
-}
-
-#components3 {
 	width: 60%;
 	height: 60%;
 }
 
+#components2 {
+	width: 80%;
+	height: 80%;
+}
+
+#components3 {
+	width: 50%;
+	height: 50%;
+}
+
 .bg-skills-title {
-	background: url("Images/Fishing.jpg") no-repeat fixed;
-	background-position: 0% 20%;
+	background: url("Images/Fishing.jpg") no-repeat fixed 0% 20%;
+	/*background-position: 0% 20%;*/
 	background-size: cover;
 }
 
@@ -300,10 +305,12 @@ h2 {
 }
 
 h3 {
+	text-align: left;
 	font-size: 30px;
 }
 
 h4 {
+	text-align: left;
 	font-size: 20px;
 }
 
@@ -332,7 +339,7 @@ footer {
 		max-width: 100%;
 		height: auto;
 
-		background: url("Images/Thailand.jpg") no-repeat scroll right center;
+		background: url("Images/Thailand.jpg") no-repeat scroll 70% center;
 		background-size: cover;
 		
 		color: #ffffff;
@@ -349,12 +356,12 @@ footer {
 	}
 
 	.bg-projects-title {
-		background: url("Images/Technical Thesis.jpg") no-repeat scroll top;
+		background: url("Images/Technical Thesis.jpg") no-repeat scroll 35% top;
 		background-size: cover;
 	}
 
 	.bg-skills-title {
-		background: url("Images/Homerun1.jpg") no-repeat scroll left bottom;
+		background: url("Images/Fishing.jpg") no-repeat scroll center 20%;
 		background-size: cover;
 	}
 
