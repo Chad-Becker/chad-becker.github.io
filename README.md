@@ -1,2 +1,2 @@
 # chad-becker.github.io
-Personal website
+Static version of my personal website
